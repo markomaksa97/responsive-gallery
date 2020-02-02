@@ -14,9 +14,15 @@
         margin: 0 auto;
       }
 
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
       .thumb {
         border: 1px solid #ccc;
         border-radius: 8px;
+
       }
 
       .thumb:hover {
@@ -29,32 +35,35 @@
         width: 100%;
         height: auto;
         background-color: rgb(92, 138, 197);
-        border-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
       }
 
       .desc {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
       }
 
       .container {
-        float: left;
-        padding: 20px;
         width: 20%;
         box-sizing: border-box;
+        padding: 8px 16px 8px 0;
       }
 
-      .text {
-        float: right;
-      }
+
 
       @media screen and (max-width: 1024px) {
         .container {
-          width: 33.33%;
+          width: 20%;
         }
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 768px) {
+        .container {
+          width: 33%;
+        }
+
+      @media screen and (max-width: 414px) {
         .container {
           width: 100%;
         }
@@ -135,20 +144,18 @@
       </div>
     </div>
 
-    <div class="text">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-        dolorem eos eligendi voluptatibus consequuntur fuga aliquid quasi totam
-        maiores quibusdam? Vel error dolore corporis nemo consequatur assumenda
-        voluptas. Nisi accusamus aperiam cumque modi harum hic commodi
-        consequuntur, qui praesentium quisquam dicta sed doloremque ex quae. Ex
-        sint, nesciunt magnam voluptatum deleniti unde harum asperiores quas
-        minima corrupti maiores necessitatibus veniam! Odit ut, modi dolor culpa
-        fuga voluptate tempora dolorem doloribus reprehenderit sapiente! Unde
-        deleniti quae error fugit repellendus doloribus veritatis itaque nisi
-        quis vitae eligendi sint, earum nam, eveniet natus id hic nihil,
-        blanditiis porro eos alias! Doloremque, ullam dignissimos.
-      </p>
-    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolorem
+      eos eligendi voluptatibus consequuntur fuga aliquid quasi totam maiores
+      quibusdam? Vel error dolore corporis nemo consequatur assumenda voluptas.
+      Nisi accusamus aperiam cumque modi harum hic commodi consequuntur, qui
+      praesentium quisquam dicta sed doloremque ex quae. Ex sint, nesciunt
+      magnam voluptatum deleniti unde harum asperiores quas minima corrupti
+      maiores necessitatibus veniam! Odit ut, modi dolor culpa fuga voluptate
+      tempora dolorem doloribus reprehenderit sapiente! Unde deleniti quae error
+      fugit repellendus doloribus veritatis itaque nisi quis vitae eligendi
+      sint, earum nam, eveniet natus id hic nihil, blanditiis porro eos alias!
+      Doloremque, ullam dignissimos.
+    </p>
   </body>
 </html>
